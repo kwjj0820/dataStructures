@@ -5,7 +5,7 @@
 #include <iostream>
 
 // TODO: T 타입을 적절한 타입으로 변경
-void print(T &list) { list.print(); }
+void print(LinkedList &list) { list.print(); }
 
 void testQueue() {
   Queue queue;
@@ -25,7 +25,9 @@ void testQueue() {
   print(queue);
 }
 
-void testStack() {
+
+void testStack()
+{
   Stack stack;
 
   for (int i = 0; i < 10; i++)
@@ -33,7 +35,6 @@ void testStack() {
 
   for (int i = 100; i > 90; i--)
     stack += i;
-
   std::cout << stack.peek() << std::endl;
   print(stack);
 

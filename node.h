@@ -9,6 +9,10 @@ public:
     value_ = value;
     next_ = nullptr;
   }
+  friend class LinkedList;
+  friend class List;
+  friend class Queue;
+  friend class Stack;
 
 private:
   int value_;
